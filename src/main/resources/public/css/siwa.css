@@ -1,0 +1,38 @@
+html, body {
+    height: 100%;
+    width: 100%;
+    font-family: "Helvetica";
+    margin: 0;
+}
+.container {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+}
+
+.container .logo {
+    display: flex;
+    flex-direction: column;
+}
+
+.container .logo .image {
+    height: 350px;
+    width: 350px;
+}
+
+.container .logo .title {
+    font-size: 1.3rem;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.container .logo .text {
+    font-size: 1rem;
+    text-align: center;
+    margin-top: 10px;
+}
