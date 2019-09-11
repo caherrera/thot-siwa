@@ -13,9 +13,7 @@ before_script:
   - case $TRAVIS_BRANCH in master) project=latest;; default) project=$TRAVIS_BRANCH;; esac
 
 script:
-  - docker build
-      --tag $DOCKER_IMAGE:$project
-      "."
+  - docker build --tag $DOCKER_IMAGE:$project "."
 
 after_success:
   - docker login -u $REGISTRY_USER -p $REGISTRY_PASS
